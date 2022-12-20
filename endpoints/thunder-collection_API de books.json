@@ -1,0 +1,104 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "API de books",
+  "dateExported": "2022-12-20T03:33:30.724Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "_id": "03b9f122-59c2-4192-918c-94625d9a142a",
+      "name": "Libros",
+      "containerId": "",
+      "created": "2022-12-20T01:40:20.043Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "22beb3da-3ab8-44d1-84df-15c8ad927f3a",
+      "name": "home",
+      "containerId": "",
+      "created": "2022-12-20T01:40:25.628Z",
+      "sortNum": 20000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "138af979-9ee4-4a9b-9311-9886bedb5837",
+      "colId": "be6e0d6e-4e29-444a-a37e-ff0a7a80a6ad",
+      "containerId": "22beb3da-3ab8-44d1-84df-15c8ad927f3a",
+      "name": "home",
+      "url": "localhost:5000/books",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2022-12-20T01:40:33.434Z",
+      "modified": "2022-12-20T01:51:20.241Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "3563cc63-77e4-4c3d-85ad-26d7728c9182",
+      "colId": "be6e0d6e-4e29-444a-a37e-ff0a7a80a6ad",
+      "containerId": "03b9f122-59c2-4192-918c-94625d9a142a",
+      "name": "Lista de libros",
+      "url": "{{secu}}://{{url}}/books",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2022-12-20T02:04:18.309Z",
+      "modified": "2022-12-20T03:19:55.401Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "6685ebf2-67ba-4675-8366-f81ae548bc79",
+      "colId": "be6e0d6e-4e29-444a-a37e-ff0a7a80a6ad",
+      "containerId": "03b9f122-59c2-4192-918c-94625d9a142a",
+      "name": "Crear libros",
+      "url": "{{secu}}://{{url}}/books",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2022-12-20T02:05:24.680Z",
+      "modified": "2022-12-20T03:20:14.952Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "    {\n      \"nameBook\": \"Libro 9999\",\n      \"page\": 10000,\n      \"datep\": \"02-02-2021\"\n    }",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "42a0c4bd-8437-4c5a-b362-3a449d42ab3e",
+      "colId": "be6e0d6e-4e29-444a-a37e-ff0a7a80a6ad",
+      "containerId": "03b9f122-59c2-4192-918c-94625d9a142a",
+      "name": "Eliminar libros",
+      "url": "{{secu}}://{{url}}/books/639bb3ff9405d688453bea39",
+      "method": "DELETE",
+      "sortNum": 40000,
+      "created": "2022-12-20T02:05:31.904Z",
+      "modified": "2022-12-20T03:20:21.624Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "6ed1cff6-5e47-4dbe-9c3f-6e2a9c49ef88",
+      "colId": "be6e0d6e-4e29-444a-a37e-ff0a7a80a6ad",
+      "containerId": "03b9f122-59c2-4192-918c-94625d9a142a",
+      "name": "Actualizar libros",
+      "url": "{{secu}}://{{url}}/books/639bb3ff9405d688453bea39",
+      "method": "PUT",
+      "sortNum": 50000,
+      "created": "2022-12-20T02:05:43.121Z",
+      "modified": "2022-12-20T03:20:26.554Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "    {\n      \"nameBook\": \"Libro 9999 Actualizado\",\n      \"page\": 10000,\n      \"datep\": \"02-02-2021\"\n    }",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}
