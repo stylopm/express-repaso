@@ -1,6 +1,11 @@
 require('dotenv').config();// Para invorcar variables 
+const bodyParser = require('body-parser')
 const express = require('express');
 const app = express();
+
+// middlewares
+app.use(bodyParser.json())
+
 const { dbConnection } = require('./config/db');
 app.listen(process.env.PORT, () => {
     console.log(`\x1b[32m ***************************************** \x1b[0m`);  
